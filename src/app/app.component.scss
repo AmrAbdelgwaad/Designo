@@ -1,0 +1,6 @@
+@use "../global/variables" as var;
+
+h1{
+  color: var.$clr-Peach;
+  font-family: var.$Jost;
+}
