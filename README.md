@@ -21,7 +21,7 @@ Users should be able to:
 ### Links
 
 -  [Solution URL](https://www.frontendmentor.io/solutions/planetsfactsite-using-angular-17-gOP497seth)
--  [Live Site URL](https://planets-jet.vercel.app/earth)
+-  [Live Site URL](https://designo-flame.vercel.app)
 
 ## My process
 
@@ -47,9 +47,7 @@ Users should be able to:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+
 ```
 ```js
 const proudOfThisFunc = () => {
@@ -67,13 +65,12 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+- [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - I used this  to import the fonts locally
+- [codepen](https://codepen.io/imathis/pen/ZYEWrw) - I used this pen for the loading spinner
 
 ## Me
 
-- [LinkedIn](https://www.linkedin.com/in/amr-mohamed-7534a623b/)
+- [LinkedIn](https://www.linkedin.com/in/amrabelgawad/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/AmrAbdelgwaad)
 
 
