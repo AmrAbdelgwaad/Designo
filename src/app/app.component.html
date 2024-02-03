@@ -1,2 +1,32 @@
-<app-spinner></app-spinner>
+@if (isLoading){
+<div class="tetrominos">
+  <div class="tetromino box1"></div>
+  <div class="tetromino box2"></div>
+  <div class="tetromino box3"></div>
+  <div class="tetromino box4"></div>
+</div>
 
+} @else {
+<header>
+  <div>
+    <a routerLink="/home" routerLinkActive="" ariaCurrentWhenActive="page">
+      <img
+        ngSrc="assets/images/shared/desktop/logo-dark.png"
+        alt="Home - Designo"
+        height="54"
+        width="404"
+        priority="true"
+    /></a>
+  </div>
+
+  <ul>
+    <li><a routerLink="/about" routerLinkActive="" ariaCurrentWhenActive="page">our company</a></li>
+    <li><a routerLink="/locations" routerLinkActive="" ariaCurrentWhenActive="page">locations</a></li>
+    <li><a routerLink="/contact" routerLinkActive="" ariaCurrentWhenActive="page">contact</a></li>
+  </ul>
+
+
+</header>
+
+  <router-outlet></router-outlet>
+}
