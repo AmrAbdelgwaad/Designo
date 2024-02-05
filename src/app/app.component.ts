@@ -23,4 +23,9 @@ export class AppComponent {
       this.isLoading = false;
     }, 5000);
   }
+
+  state = false;
+  toggle() {
+    this.state = !this.state;
+  }
 }

@@ -1,1 +1,6 @@
 @use "global/reset" as *;
+@use "global/variables" as var;
+
+body{
+  font-family: var.$Jost;
+}

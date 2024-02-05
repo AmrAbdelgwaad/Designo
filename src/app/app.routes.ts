@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 export const routes: Routes = [
   {
     path: 'home',
-    title: 'Designo Agency home',
+    title: 'Designo Agency',
     component: HomeComponent,
     children: [
       {

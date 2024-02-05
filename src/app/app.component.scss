@@ -10,7 +10,8 @@ $speed: 1.5s;
 
 .tetrominos {
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-$h, -$w);
 }
 
@@ -18,8 +19,8 @@ $speed: 1.5s;
   width: $w;
   height: $h;
   position: absolute;
-  transition: all ease .3s;
-  background: url('../assets/images/square.svg') no-repeat top center;
+  transition: all ease 0.3s;
+  background: url("../assets/images/square.svg") no-repeat top center;
 }
 
 .box1 {
@@ -37,51 +38,154 @@ $speed: 1.5s;
 }
 
 @keyframes tetromino1 {
-  0%, 40% {
-    /* compose logo *//* 1 on 3 *//* L-shape */
-    transform: translate(0,0);
-  } 50% {
-      /* pre-box */
-      transform: translate($xspace,-$yspace);
-    } 60%, 100% {
-        /* box *//* compose logo */
-        transform: translate($xspace*2,0);
-      }
+  0%,
+  40% {
+    /* compose logo */ /* 1 on 3 */ /* L-shape */
+    transform: translate(0, 0);
+  }
+  50% {
+    /* pre-box */
+    transform: translate($xspace, -$yspace);
+  }
+  60%,
+  100% {
+    /* box */ /* compose logo */
+    transform: translate($xspace * 2, 0);
+  }
 }
 
 @keyframes tetromino2 {
-  0%, 20% {
-    /* compose logo *//* 1 on 3 */
-    transform: translate($xspace*2, 0px);
-  } 40%, 100% {
-      /* L-shape *//* box *//* compose logo */
-      transform: translate($xspace*3, $yspace);
-    }
+  0%,
+  20% {
+    /* compose logo */ /* 1 on 3 */
+    transform: translate($xspace * 2, 0px);
+  }
+  40%,
+  100% {
+    /* L-shape */ /* box */ /* compose logo */
+    transform: translate($xspace * 3, $yspace);
+  }
 }
 
 @keyframes tetromino3 {
   0% {
     /* compose logo */
-    transform: translate($xspace*3, $yspace);
-  } 20%, 60% {
-      /* 1 on 3 *//* L-shape *//* box */
-      transform: translate($xspace*2, $yspace*2);
-    } 90%, 100% {
-        /* compose logo */
-        transform: translate($xspace, $yspace);
-      }
+    transform: translate($xspace * 3, $yspace);
+  }
+  20%,
+  60% {
+    /* 1 on 3 */ /* L-shape */ /* box */
+    transform: translate($xspace * 2, $yspace * 2);
+  }
+  90%,
+  100% {
+    /* compose logo */
+    transform: translate($xspace, $yspace);
+  }
 }
 
 @keyframes tetromino4 {
-  0%, 60% {
-    /* compose logo *//* 1 on 3 *//* L-shape *//* box */
+  0%,
+  60% {
+    /* compose logo */ /* 1 on 3 */ /* L-shape */ /* box */
     transform: translate($xspace, $yspace);
-  } 90%, 100% {
-      /* compose logo */
-      transform: translate(0, 0);
-    }
+  }
+  90%,
+  100% {
+    /* compose logo */
+    transform: translate(0, 0);
+  }
 }
 
 // The navigation
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo {
+  max-width: 12.625rem;
+  margin-top: 2.19rem;
+  margin-left: 1.5rem;
+}
+@media (max-width: 44.25em) {
+  .flex-group {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .menu-btn {
+    border: 0;
+    outline: 0;
+    width: 1.5rem;
+    height: 1.25rem;
+    background: url("../assets/images/shared/mobile/icon-hamburger.svg")
+      no-repeat;
+    margin-top: 2.44rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  .menu-btn[aria-expanded="true"] {
+    background: url("../assets/images/shared/mobile/icon-close.svg") no-repeat;
+  }
+  .primary-nav {
+    transform: translateX(100%);
+    max-height: 0;
+    transition: all 350ms ease-out;
+    overflow: hidden;
+  }
+  .primary-nav[data-visible="true"] {
+    padding: 3rem 0 1rem 1.5rem;
+    margin-top: 2.12rem;
+    background: var.$clr-Black;
+    transition: all 350ms ease-out;
+    transform: translateX(0%);
+    max-height: 100%;
+  }
+  li {
+    padding-bottom: 2rem;
+  }
+  a {
+    color: var.$clr-White;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+  }
+}
+
+@media (min-width: 44.25em /*TODO change this later*/) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    margin: 4rem 0 0 2.44rem;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .primary-nav {
+    display: flex;
+    gap: 2.62rem;
+    margin: 4.44rem 2.62rem 0 0;
+  }
+  a{
+    color: var.$clr-DarkGrey;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 78.125em /*TODO change this later*/) {
+  .logo {
+  margin-left: 10.31rem;
+  }
+
+  .primary-nav {
+   margin-right: 10.38rem;
+  }
+}

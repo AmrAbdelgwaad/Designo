@@ -8,7 +8,7 @@
 
 } @else {
 <header>
-  <div>
+  <div class="flex-group">
     <a routerLink="/home" routerLinkActive="" ariaCurrentWhenActive="page">
       <img
         ngSrc="assets/images/shared/desktop/logo-dark.png"
@@ -16,17 +16,48 @@
         height="54"
         width="404"
         priority="true"
+        class="logo"
     /></a>
+    <button
+      class="menu-btn"
+      aria-controls="primary-nav"
+      [attr.aria-expanded]="state"
+      (click)="toggle()"
+    >
+      <span class="sr-only">Manu</span>
+    </button>
   </div>
 
-  <ul>
-    <li><a routerLink="/about" routerLinkActive="" ariaCurrentWhenActive="page">our company</a></li>
-    <li><a routerLink="/locations" routerLinkActive="" ariaCurrentWhenActive="page">locations</a></li>
-    <li><a routerLink="/contact" routerLinkActive="" ariaCurrentWhenActive="page">contact</a></li>
+  <ul class="primary-nav" id="primary-nav" [attr.data-visible]="state">
+    <li>
+      <a
+        routerLink="/about"
+        routerLinkActive=""
+        ariaCurrentWhenActive="page"
+        (click)="state = false"
+        >our company</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/locations"
+        routerLinkActive=""
+        ariaCurrentWhenActive="page"
+        (click)="state = false"
+        >locations</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/contact"
+        routerLinkActive=""
+        ariaCurrentWhenActive="page"
+        (click)="state = false"
+        >contact</a
+      >
+    </li>
   </ul>
-
-
 </header>
 
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
 }
