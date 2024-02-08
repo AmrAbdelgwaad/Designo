@@ -20,6 +20,9 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+a {
+  text-decoration: none;
+}
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
@@ -53,6 +56,8 @@ select {
   }
 }
 
+// visually hidden
+
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -63,4 +68,11 @@ select {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+// utility classes
+
+.center {
+  display: flex;
+  justify-content: center;
 }

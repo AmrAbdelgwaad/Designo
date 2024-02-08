@@ -100,7 +100,6 @@ $speed: 1.5s;
 // The navigation
 
 a {
-  text-decoration: none;
   text-transform: uppercase;
 }
 .logo {
@@ -108,7 +107,8 @@ a {
   margin-top: 2.19rem;
   margin-left: 1.5rem;
 }
-@media (max-width: 44.25em) {
+@media (max-width: 43em) {
+  //TODO change this later
   .flex-group {
     display: flex;
     justify-content: space-between;
@@ -137,6 +137,7 @@ a {
   .primary-nav[data-visible="true"] {
     padding: 3rem 0 1rem 1.5rem;
     margin-top: 2.12rem;
+    margin-bottom: -2.12rem;
     background: var.$clr-Black;
     transition: all 350ms ease-out;
     transform: translateX(0%);
@@ -153,7 +154,7 @@ a {
   }
 }
 
-@media (min-width: 44.25em /*TODO change this later*/) {
+@media (min-width: 43em /*TODO change this later*/) {
   header {
     display: flex;
     justify-content: space-between;
@@ -169,23 +170,23 @@ a {
     gap: 2.62rem;
     margin: 4.44rem 2.62rem 0 0;
   }
-  a{
+  a {
     color: var.$clr-DarkGrey;
     font-size: 0.875rem;
     font-weight: 400;
     letter-spacing: 0.125rem;
   }
-  a:hover{
+  a:hover {
     text-decoration: underline;
   }
 }
 
-@media (min-width: 78.125em /*TODO change this later*/) {
+@media (min-width: 78.3em /*TODO change this later*/) {
   .logo {
-  margin-left: 10.31rem;
+    margin-left: 10.31rem;
   }
 
   .primary-nav {
-   margin-right: 10.38rem;
+    margin-right: 10.38rem;
   }
 }

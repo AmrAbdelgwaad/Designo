@@ -1,0 +1,79 @@
+@use "../../global/variables" as var;
+
+.banner {
+  margin-top: 2.13rem;
+  background: var.$clr-Peach
+    url("../../assets/images/home/desktop/bg-pattern-hero-home.svg") no-repeat;
+  background-position: left 6.3rem;
+}
+
+.banner__heading {
+  color: var.$clr-White;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.125;
+  padding-top: 5rem;
+}
+
+.banner__description {
+  color: var.$clr-White;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.66;
+  width: 90vw;
+  margin: 0.88rem auto 1.5rem;
+}
+
+.banner__anchor {
+  display: block;
+  text-align: center;
+  color: var.$clr-DarkGrey;
+  background-color: var.$clr-White;
+  max-width: 9.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.9375rem;
+  border-radius: 0.5rem;
+  margin: 0 auto 2.5rem;
+}
+
+.banner__img {
+  max-width: 17.41981rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 43em /*TODO change this later*/) {
+  .banner {
+    border-radius: 0.9375rem;
+    margin: 4rem 2.5rem 4.19rem 2.44rem;
+  }
+  .banner__heading {
+    font-size: 3rem;
+    line-height: 1;
+    padding-top: 3.75rem;
+    margin: 0 auto;
+    width: 75vw;
+  }
+  .banner__description {
+    font-size: 1rem;
+    line-height: 1.625;
+    width: 60vw;
+    margin: 0.88rem auto 1.5rem;
+  }
+  .banner__anchor {
+    margin-bottom: 1.9rem;
+  }
+  &:hover {
+    color: var.$clr-White;
+    background-color: var.$clr-LightPeach;
+  }
+}
+
+@media (min-width: 78.3em /*TODO change this later*/) {
+  .banner {
+    margin-left: 10.31rem;
+    margin-right: 10.25rem;
+    width: 69rem;
+  }
+}
