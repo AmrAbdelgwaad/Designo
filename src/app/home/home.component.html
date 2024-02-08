@@ -1,4 +1,5 @@
 <main>
+  @if (!myOutlet.isActivated){
   <div class="banner">
     <div class="banner__content">
       <h1 class="banner__heading">
@@ -33,12 +34,32 @@
       />
     </picture>
   </div>
-  <div>
-    <h2>i am just a placeholder content</h2>
+  }
+  <router-outlet #myOutlet="outlet"></router-outlet>
+  <div class="portfolio">
+    <h2 class="sr-only">portfolio</h2>
+    <div class="portfolio__anchors">
+      <a
+        routerLink="web-design"
+        routerLinkActive=""
+        ariaCurrentWhenActive="page"
+        class="portfolio__web"
+        >web design <span>view projects</span></a
+      >
+      <a
+        routerLink="app-design"
+        routerLinkActive=""
+        ariaCurrentWhenActive="page"
+        class="portfolio__app"
+        >app design <span>view projects</span></a
+      >
+      <a
+        routerLink="graphic-design"
+        routerLinkActive="graphic"
+        ariaCurrentWhenActive="page"
+        class="portfolio__graphic"
+        >graphic design <span>view projects</span></a
+      >
+    </div>
   </div>
 </main>
-<!--
-<a routerLink="web-design">app</a>
-
-<router-outlet></router-outlet>
--->

@@ -67,7 +67,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - I used this  to import the fonts locally
 - [codepen](https://codepen.io/imathis/pen/ZYEWrw) - I used this pen for the loading spinner
-
+- [stackoverflow](https://stackoverflow.com/questions/47716255/check-if-router-outlet-is-in-use) - has a good answer about knowing when an angular router outlet is active
 ## Me
 
 - [LinkedIn](https://www.linkedin.com/in/amrabelgawad/)
