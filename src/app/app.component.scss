@@ -181,12 +181,12 @@ a {
   }
 }
 
-@media (min-width: 78.3em /*TODO change this later*/) {
+@media (min-width: 75em /*TODO change this later*/) {
+  header{
+    justify-content: center;
+  }
   .logo {
-    margin-left: 10.31rem;
+    margin-right: 34rem;
   }
 
-  .primary-nav {
-    margin-right: 10.38rem;
-  }
 }

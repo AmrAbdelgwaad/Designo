@@ -4,7 +4,7 @@
   margin-top: 2.13rem;
   background: var.$clr-Peach
     url("../../assets/images/home/desktop/bg-pattern-hero-home.svg") no-repeat;
-  background-position: left 6.3rem;
+  background-position: left 6.37rem;
 }
 
 .banner__heading {
@@ -31,11 +31,12 @@
   text-align: center;
   color: var.$clr-DarkGrey;
   background-color: var.$clr-White;
+  text-transform: uppercase;
   max-width: 9.5rem;
   padding: 1rem 1.5rem;
   font-size: 0.9375rem;
   border-radius: 0.5rem;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 5rem;
 }
 
 .banner__img {
@@ -47,6 +48,7 @@
   .banner {
     border-radius: 0.9375rem;
     margin: 4rem 2.5rem 4.19rem 2.44rem;
+    background-position: right 6.34rem;
   }
   .banner__heading {
     font-size: 3rem;
@@ -62,18 +64,38 @@
     margin: 0.88rem auto 1.5rem;
   }
   .banner__anchor {
-    margin-bottom: 1.9rem;
+    margin-bottom: 4.5rem;
+    &:hover {
+      color: var.$clr-White;
+      background-color: var.$clr-LightPeach;
+    }
   }
-  &:hover {
-    color: var.$clr-White;
-    background-color: var.$clr-LightPeach;
-  }
+
 }
 
-@media (min-width: 78.3em /*TODO change this later*/) {
+@media (min-width: 75em /*TODO change this later*/) {
   .banner {
-    margin-left: 10.31rem;
-    margin-right: 10.25rem;
+    margin: 4rem auto 10rem;
     width: 69rem;
+    display: flex;
+    background-position: right 0;
+  }
+  .banner__heading{
+    text-align: left;
+    padding: 0;
+    margin: 9rem 0 0 5.9rem;
+    width: 33.75rem;
+  }
+  .banner__description {
+   text-align: left;
+    width: 27.8rem;
+    margin: 0.69rem 0 2.5rem 5.94rem;
+  }
+  .banner__anchor {
+    margin: 0 0  9.06rem 5.94rem;
+  }
+  .banner__img {
+
+    margin: 8.69rem 0 0 6.16rem ;
   }
 }
