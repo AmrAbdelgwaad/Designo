@@ -68,6 +68,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - I used this  to import the fonts locally
 - [codepen](https://codepen.io/imathis/pen/ZYEWrw) - I used this pen for the loading spinner
 - [stackoverflow](https://stackoverflow.com/questions/47716255/check-if-router-outlet-is-in-use) - has a good answer about knowing when an angular router outlet is active
+- [stackoverflow](https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image) - has a good solution about adding Semi-transparent color layer over background-image
 ## Me
 
 - [LinkedIn](https://www.linkedin.com/in/amrabelgawad/)

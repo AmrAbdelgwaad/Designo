@@ -1,7 +1,10 @@
 @use "../../global/variables" as var;
 
+//Banner
+
 .banner {
   margin-top: 2.13rem;
+  margin-bottom: 7.5rem;
   background: var.$clr-Peach
     url("../../assets/images/home/desktop/bg-pattern-hero-home.svg") no-repeat;
   background-position: left 6.37rem;
@@ -37,6 +40,10 @@
   font-size: 0.9375rem;
   border-radius: 0.5rem;
   margin: 0 auto 5rem;
+  &:hover {
+    color: var.$clr-White;
+    background-color: var.$clr-LightPeach;
+  }
 }
 
 .banner__img {
@@ -44,10 +51,61 @@
   margin: 0 auto;
 }
 
+// Anchors
+
+.portfolio__anchor {
+  color: var.$clr-White;
+  display: block;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.0875rem;
+  text-transform: uppercase;
+  padding-top: 5.64rem;
+  padding-bottom: 5.62rem;
+  margin: 0 1.5rem;
+  border-radius: 0.9375rem;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  &:hover {
+    box-shadow: inset 0 0 0 1000px hsl(10, 72%, 66%, 0.8);
+  }
+}
+
+.small {
+  display: block;
+  font-size: 0.9375rem;
+  letter-spacing: 0.3125rem;
+  margin-top: 0.52rem;
+  &:after {
+    content: url("../../assets/images/shared/desktop/icon-right-arrow.svg");
+    margin-left: 1rem;
+  }
+}
+
+.portfolio__web {
+  background: url("../../assets/images/home/mobile/image-web-design.jpg")
+    no-repeat;
+  background-size: cover;
+}
+.portfolio__app {
+  margin-top: 1.5rem;
+  background: url("../../assets/images/home/mobile/image-app-design.jpg")
+    no-repeat;
+  background-size: cover;
+}
+.portfolio__graphic {
+  margin-top: 1.5rem;
+  background: url("../../assets/images/home/mobile/image-graphic-design.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 43em /*TODO change this later*/) {
+  //Banner
+
   .banner {
     border-radius: 0.9375rem;
-    margin: 4rem 2.5rem 4.19rem 2.44rem;
+    margin: 4rem 2.5rem 7.5rem 2.44rem;
     background-position: right 6.34rem;
   }
   .banner__heading {
@@ -65,37 +123,103 @@
   }
   .banner__anchor {
     margin-bottom: 4.5rem;
-    &:hover {
-      color: var.$clr-White;
-      background-color: var.$clr-LightPeach;
-    }
   }
 
+  // Anchors
+
+  .portfolio__anchor {
+    padding-top: 3.31rem;
+    padding-bottom: 3.31rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .small {
+    margin-top: 0.88rem;
+  }
+
+  .portfolio__web {
+    background: url("../../assets/images/home/tablet/image-web-design-t.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+  .portfolio__app {
+    background: url("../../assets/images/home/tablet/image-app-design-t.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+  .portfolio__graphic {
+    background: url("../../assets/images/home/tablet/image-graphic-design-t.jpg")
+      no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 75em /*TODO change this later*/) {
+  //Banner
+
   .banner {
     margin: 4rem auto 10rem;
     width: 69rem;
     display: flex;
     background-position: right 0;
   }
-  .banner__heading{
+  .banner__heading {
     text-align: left;
     padding: 0;
     margin: 9rem 0 0 5.9rem;
     width: 33.75rem;
   }
   .banner__description {
-   text-align: left;
+    text-align: left;
     width: 27.8rem;
     margin: 0.69rem 0 2.5rem 5.94rem;
   }
   .banner__anchor {
-    margin: 0 0  9.06rem 5.94rem;
+    margin: 0 0 9.06rem 5.94rem;
   }
   .banner__img {
+    margin: 8.69rem 0 0 6.16rem;
+  }
 
-    margin: 8.69rem 0 0 6.16rem ;
+  // Anchors
+
+  .portfolio__anchors {
+    display: grid;
+    grid-template-areas:
+      "web app"
+      "web graphic";
+    grid-template-columns: 33.8125rem 33.8125rem;
+    justify-content: center;
+    column-gap: 1.87rem;
+    row-gap: 1.5rem;
+  }
+  .portfolio__anchor {
+    margin: 0;
+  }
+  .portfolio__web {
+    grid-area: web;
+    background: url("../../assets/images/home/desktop/image-web-design-large.jpg")
+    no-repeat;
+    background-size: cover;
+    padding-top: 17.06rem;
+    padding-bottom: 17.06rem;
+
+  }
+  .portfolio__app {
+    grid-area: app;
+    background: url("../../assets/images/home/desktop/image-app-design-d.jpg")
+    no-repeat;
+    background-size: cover;
+    padding-top: 6.69rem;
+    padding-bottom: 6.69rem;
+  }
+  .portfolio__graphic {
+    grid-area: graphic;
+    background: url("../../assets/images/home/desktop/image-graphic-design-d.jpg")
+    no-repeat;
+    background-size: cover;
+    padding-top: 6.69rem;
+    padding-bottom: 6.69rem;
   }
 }
