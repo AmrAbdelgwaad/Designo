@@ -38,25 +38,33 @@
   <router-outlet #myOutlet="outlet"></router-outlet>
   <div class="portfolio">
     <h2 class="sr-only">portfolio</h2>
-    <div class="portfolio__anchors">
+    <div
+      class="portfolio__anchors"
+      [class.anchors-inactive]="a.isActive || b.isActive || c.isActive"
+      [class.anchors-web-inactive]="a.isActive"
+    >
       <a
         routerLink="web-design"
-        routerLinkActive=""
+        routerLinkActive="active"
         ariaCurrentWhenActive="page"
+        #a="routerLinkActive"
+        [class.web-inactive]="b.isActive || c.isActive"
         class="portfolio__anchor portfolio__web"
         >web design <span class="small">view projects</span></a
       >
       <a
         routerLink="app-design"
-        routerLinkActive=""
+        routerLinkActive="active"
         ariaCurrentWhenActive="page"
+        #b="routerLinkActive"
         class="portfolio__anchor portfolio__app"
         >app design <span class="small">view projects</span></a
       >
       <a
         routerLink="graphic-design"
-        routerLinkActive="graphic"
+        routerLinkActive="active"
         ariaCurrentWhenActive="page"
+        #c="routerLinkActive"
         class="portfolio__anchor portfolio__graphic"
         >graphic design <span class="small">view projects</span></a
       >

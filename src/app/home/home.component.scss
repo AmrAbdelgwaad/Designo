@@ -99,6 +99,9 @@
     no-repeat;
   background-size: cover;
 }
+.active {
+  display: none;
+}
 
 @media (min-width: 43em /*TODO change this later*/) {
   //Banner
@@ -200,16 +203,15 @@
   .portfolio__web {
     grid-area: web;
     background: url("../../assets/images/home/desktop/image-web-design-large.jpg")
-    no-repeat;
+      no-repeat;
     background-size: cover;
     padding-top: 17.06rem;
     padding-bottom: 17.06rem;
-
   }
   .portfolio__app {
     grid-area: app;
     background: url("../../assets/images/home/desktop/image-app-design-d.jpg")
-    no-repeat;
+      no-repeat;
     background-size: cover;
     padding-top: 6.69rem;
     padding-bottom: 6.69rem;
@@ -217,9 +219,23 @@
   .portfolio__graphic {
     grid-area: graphic;
     background: url("../../assets/images/home/desktop/image-graphic-design-d.jpg")
-    no-repeat;
+      no-repeat;
     background-size: cover;
     padding-top: 6.69rem;
     padding-bottom: 6.69rem;
+  }
+  .web-inactive {
+    background: url("../../assets/images/home/desktop/image-web-design-small.jpg")
+      no-repeat;
+    background-size: cover;
+    padding-top: 6.69rem;
+    padding-bottom: 6.69rem;
+  }
+  .anchors-inactive {
+    row-gap: unset;
+  }
+  .anchors-web-inactive{
+    grid-template-areas: "app graphic";
+    row-gap: unset;
   }
 }
