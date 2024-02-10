@@ -1,5 +1,5 @@
 <main>
-  @if (!myOutlet.isActivated){
+  @if (a.isActive || b.isActive || c.isActive){
   <div class="banner">
     <div class="banner__content">
       <h1 class="banner__heading">
@@ -34,7 +34,7 @@
     </picture>
   </div>
   }
-  <router-outlet #myOutlet="outlet"></router-outlet>
+  <router-outlet ></router-outlet>
   <div class="portfolio">
     <h2 class="sr-only">portfolio</h2>
     <div
