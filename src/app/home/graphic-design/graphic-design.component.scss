@@ -1,0 +1,11 @@
+@use "../../../global/inner-pages" as *;
+@use "../../../global/colors" as *;
+
+@media (min-width: 43em) {
+  .intro {
+    background: $clr-Peach
+      url("../../../assets/images/graphic-design/desktop/bg-pattern-intro-graphic.svg")
+      no-repeat;
+    background-position: left;
+  }
+}
