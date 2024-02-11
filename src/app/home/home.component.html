@@ -34,7 +34,7 @@
     </picture>
   </div>
   }
-  <router-outlet ></router-outlet>
+  <router-outlet></router-outlet>
   <div class="portfolio">
     <h2 class="sr-only">portfolio</h2>
     <div
@@ -48,6 +48,7 @@
         ariaCurrentWhenActive="page"
         #a="routerLinkActive"
         [class.web-inactive]="b.isActive || c.isActive"
+        (click)="scrollToTop()"
         class="portfolio__anchor portfolio__web"
         >web design <span class="small">view projects</span></a
       >
@@ -56,6 +57,7 @@
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
         #b="routerLinkActive"
+        (click)="scrollToTop()"
         class="portfolio__anchor portfolio__app"
         >app design <span class="small">view projects</span></a
       >
@@ -64,9 +66,66 @@
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
         #c="routerLinkActive"
+        (click)="scrollToTop()"
         class="portfolio__anchor portfolio__graphic"
         >graphic design <span class="small">view projects</span></a
       >
     </div>
   </div>
+
+  @if (!a.isActive && !b.isActive && !c.isActive){
+  <div class="features">
+    <div class="feature">
+      <img
+        ngSrc="assets/images/home/desktop/illustration-passionate.svg"
+        alt=""
+        height="202"
+        width="202"
+        class="feature__img"
+      />
+      <div class="feature__content">
+        <h2 class="feature__title">Passionate</h2>
+        <p class="feature__description">
+          Each project starts with an in-depth brand research to ensure we only
+          create products that serve a purpose. We merge art, design, and
+          technology into exciting new solutions.
+        </p>
+      </div>
+    </div>
+    <div class="feature">
+      <img
+        ngSrc="assets/images/home/desktop/illustration-resourceful.svg"
+        alt=""
+        height="202"
+        width="202"
+        class="feature__img"
+      />
+      <div class="feature__content">
+        <h2 class="feature__title">Resourceful</h2>
+        <p class="feature__description">
+          Everything that we do has a strategic purpose. We use an agile
+          approach in all of our projects and value customer collaboration. It
+          guarantees superior results that fulfill our clients’ needs.
+        </p>
+      </div>
+    </div>
+    <div class="feature">
+      <img
+        ngSrc="assets/images/home/desktop/illustration-friendly.svg"
+        alt=""
+        height="202"
+        width="202"
+        class="feature__img"
+      />
+      <div class="feature__content">
+        <h2 class="feature__title">Friendly</h2>
+        <p class="feature__description">
+          We are a group of enthusiastic folks who know how to put people first.
+          Our success depends on our customers, and we strive to give them the
+          best experience a company can provide.
+        </p>
+      </div>
+    </div>
+  </div>
+  }
 </main>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage, ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -9,4 +9,9 @@ import { NgOptimizedImage } from '@angular/common';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  constructor(private viewportScroller: ViewportScroller) {}
+  scrollToTop() {
+    this.viewportScroller.scrollToPosition([0, 0]);
+  }
+}

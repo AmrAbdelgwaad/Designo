@@ -1,6 +1,6 @@
 @use "../../global/colors" as var;
 
-//Banner
+// Banner
 
 .banner {
   margin-top: 2.13rem;
@@ -102,8 +102,41 @@
   display: none;
 }
 
+// Features
+
+.features {
+  margin: 7.5rem 0 7.56rem;
+  display: grid;
+  justify-content: center;
+  row-gap: 5rem;
+}
+
+.feature__img {
+  margin: 0 auto;
+  background-color: var.$clr-LightGrey;
+  border-radius: 50%;
+}
+
+.feature__title {
+  color: var.$clr-DarkGrey;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.3125rem;
+  margin: 3rem 0 2rem;
+}
+
+.feature__description {
+  color: var.$clr-DarkGrey;
+  text-align: center;
+  max-width: 20.4375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
 @media (min-width: 43em) {
-  //Banner
+  // Banner
 
   .banner {
     border-radius: 0.9375rem;
@@ -152,10 +185,35 @@
       no-repeat;
     background-size: cover;
   }
+
+  // Features
+
+  .features {
+    justify-content: left;
+    row-gap: 2rem;
+    margin-bottom: 4.19rem;
+  }
+  .feature {
+    display: flex;
+    margin-left: 2.44rem;
+  }
+  .feature__content{
+    margin-left: 3rem;
+  }
+  .feature__title {
+    text-align: left;
+    margin: 2.5rem 0 1rem;
+  }
+
+  .feature__description {
+    text-align: left;
+    max-width:  100%;
+    margin-right: 2.5rem;
+  }
 }
 
 @media (min-width: 75em) {
-  //Banner
+  // Banner
 
   .banner {
     margin: 4rem auto 10rem;
@@ -230,8 +288,35 @@
   .anchors-inactive {
     row-gap: unset;
   }
-  .anchors-web-inactive{
+  .anchors-web-inactive {
     grid-template-areas: "app graphic";
     row-gap: unset;
+  }
+
+  // Features
+
+  .features {
+    justify-content: center;
+    row-gap: 0;
+    column-gap: 2rem;
+    margin: 10rem 0;
+    grid-template-columns: repeat(3, 21.875rem);
+  }
+  .feature {
+    display: block;
+    margin-left: 0;
+  }
+  .feature__content{
+    margin-left: 0;
+  }
+  .feature__title {
+    text-align: center;
+    margin: 3rem 0 2rem;
+  }
+
+  .feature__description {
+    text-align: center;
+    max-width:  21.875rem;
+    margin-right: 0;
   }
 }
