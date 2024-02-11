@@ -1,4 +1,4 @@
-@use "../../../global/variables" as var;
+@use "../../../global/colors" as var;
 
 .web {
   margin-top: 2.13rem;
@@ -28,6 +28,48 @@
   line-height: 1.66;
 }
 
+// Projects
+
+.projects {
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.project {
+  max-width: 20.4375rem;
+  margin: 0 auto;
+  border-radius: 0.9375rem;
+  overflow: hidden; // a solution from stackoverflow because border-radius wasn't working
+  background: var.$clr-Grey-400;
+  cursor: pointer;
+
+  &:hover  {
+    background: var.$clr-Peach;
+    .project__title , .project__description{
+      color: var.$clr-White;
+    }
+  }
+}
+
+.project__title {
+  color: var.$clr-Peach;
+  text-align: center;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.3125rem;
+  padding: 2rem 0 1rem;
+}
+
+.project__description {
+  color: var.$clr-DarkGrey;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+  padding: 0 1.87rem 2rem;
+}
 @media (min-width: 43em) {
   .web {
     border-radius: 0.9375rem;
@@ -43,10 +85,40 @@
   }
 
   .web__description {
-    margin-top: .2rem;
+    margin-top: 0.2rem;
     padding: 0 9rem 4rem;
     font-size: 1rem;
     line-height: 1.625;
+  }
+
+  // Projects
+
+  .projects {
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .project {
+    max-width: 100%;
+    margin: 0 2.44rem 0 2.5rem;
+    display: flex;
+  }
+
+  .project__img {
+    max-width: 21.125rem;
+  }
+
+  .project__content{
+    margin-left: auto;
+  }
+
+  .project__title {
+    padding: 6.81rem 0 .92rem;
+
+  }
+
+  .project__description {
+    padding: 0 2.56rem 6.77rem;
   }
 }
 
@@ -55,8 +127,42 @@
     width: 69.4375rem;
     margin: 4rem auto 10rem;
   }
-  .web__description{
+  .web__description {
     width: 45.625rem;
-    margin: .2rem auto 0;
+    margin: 0.2rem auto 0;
+  }
+
+  // Projects
+
+  .projects {
+    gap: unset;
+    column-gap: 1.88rem;
+    row-gap: 2rem;
+
+    justify-content: center;
+    margin-bottom: 10rem;
+    grid-template-columns: repeat(3,21.875rem);
+  }
+
+  .project {
+    margin: 0;
+    display: block;
+  }
+
+  .project__img {
+    max-width: 100%;
+  }
+
+  .project__content{
+    margin-left: 0;
+  }
+
+  .project__title {
+    padding: 2rem 0 1rem;
+
+  }
+
+  .project__description {
+    padding: 0 2rem 2rem;
   }
 }

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-web-design',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './web-design.component.html',
-  styleUrl: './web-design.component.scss'
+  styleUrl: './web-design.component.scss',
 })
-export class WebDesignComponent {
-
-}
+export class WebDesignComponent {}

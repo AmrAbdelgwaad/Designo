@@ -3,7 +3,7 @@
 This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
-### The challenge
+### The challenge:
 
 Users should be able to:
 
@@ -14,18 +14,18 @@ Users should be able to:
   - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 - **Bonus**: View actual locations on the locations page maps (we recommend [Leaflet JS](https://leafletjs.com/) for this)
 
-### Preview
+### Preview:
 
 ![Design preview for the Designo agency website coding challenge](src/assets/images/preview.jpg)
 
-### Links
+### Links:
 
 -  [Solution URL](https://www.frontendmentor.io/solutions/planetsfactsite-using-angular-17-gOP497seth)
 -  [Live Site URL](https://designo-flame.vercel.app)
 
 ## My process
 
-### Built with
+### Built with:
 
 - Angular 17
 - Angular routing
@@ -39,7 +39,7 @@ Users should be able to:
 - Webstorm
 
 
-### What I learned
+### What I learned:
 
 
 
@@ -57,13 +57,13 @@ const proudOfThisFunc = () => {
 
 
 
-### Continued development
+### Continued development:
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
-### Useful resources
+### Useful resources:
 
 - [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - I used this  to import the fonts locally
 - [codepen](https://codepen.io/imathis/pen/ZYEWrw) - I used this pen for the loading spinner
@@ -71,7 +71,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [stackoverflow](https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image) - has a good solution about adding Semi-transparent color layer over background-image
 - [itecnote](https://itecnote.com/tecnote/r-angular-apply-style-to-element-depending-on-sibling-routerlinkactive/) - has a good answer about styling other elements if router is active
 - [stackoverflow](https://stackoverflow.com/questions/65363248/warning-budgets-initial-exceeded-maximum-budget) - a fix for Warning: budgets: initial exceeded maximum budget in Angular
-## Me
+## Me:
 
 - [LinkedIn](https://www.linkedin.com/in/amrabelgawad/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/AmrAbdelgwaad)
