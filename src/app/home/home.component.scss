@@ -102,6 +102,10 @@
   display: none;
 }
 
+.anchors-inactive {
+ margin-bottom: 6rem;
+}
+
 // Features
 
 .features {
@@ -184,6 +188,10 @@
     background: url("../../assets/images/home/tablet/image-graphic-design-t.jpg")
       no-repeat;
     background-size: cover;
+  }
+
+  .anchors-inactive {
+    margin-bottom: 7.5rem;
   }
 
   // Features
@@ -287,6 +295,7 @@
   }
   .anchors-inactive {
     row-gap: unset;
+    margin-bottom: 10rem;
   }
   .anchors-web-inactive {
     grid-template-areas: "app graphic";

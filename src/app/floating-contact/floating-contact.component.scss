@@ -2,7 +2,8 @@
 
 .contact {
   display: grid;
-  margin: 0 1.5rem;
+  margin: 0 1.5rem -11.81rem;
+  position: relative; //t o make it appear on the top
   background-color: var.$clr-Peach;
   border-radius: 0.9375rem;
   padding-bottom: 4rem;

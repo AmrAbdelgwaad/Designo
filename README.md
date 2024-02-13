@@ -1,7 +1,6 @@
 # Frontend Mentor - Designo agency website solution
 
-This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge:
 
@@ -20,8 +19,8 @@ Users should be able to:
 
 ### Links:
 
--  [Solution URL](https://www.frontendmentor.io/solutions/planetsfactsite-using-angular-17-gOP497seth)
--  [Live Site URL](https://designo-flame.vercel.app)
+- [Solution URL](https://www.frontendmentor.io/solutions/planetsfactsite-using-angular-17-gOP497seth)
+- [Live Site URL](https://designo-flame.vercel.app)
 
 ## My process
 
@@ -38,24 +37,21 @@ Users should be able to:
 - Bem (I am not 100% using it, it just offers some guidelines for me to follow)
 - Webstorm
 
-
 ### What I learned:
-
-
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 
 ```
+
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  console.log("🎉");
+};
 ```
-
-
 
 ### Continued development:
 
@@ -65,20 +61,22 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources:
 
-- [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - I used this  to import the fonts locally
+- [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - I used this to import the fonts locally
 - [codepen](https://codepen.io/imathis/pen/ZYEWrw) - I used this pen for the loading spinner
 - [stackoverflow](https://stackoverflow.com/questions/47716255/check-if-router-outlet-is-in-use) - has a good answer about knowing when an angular router outlet is active
 - [stackoverflow](https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image) - has a good solution about adding Semi-transparent color layer over background-image
 - [itecnote](https://itecnote.com/tecnote/r-angular-apply-style-to-element-depending-on-sibling-routerlinkactive/) - has a good answer about styling other elements if router is active
 - [stackoverflow](https://stackoverflow.com/questions/65363248/warning-budgets-initial-exceeded-maximum-budget) - a fix for Warning: budgets: initial exceeded maximum budget in Angular
+- I didn't use nav in the footer as W3C specification states:
+  > Not all groups of links on a page need to be in a nav element — the element
+  > is primarily intended for sections that consist of major navigation blocks.
+  > In particular, it is common for footers to have a short list of links to various
+  > pages of a site, such as the terms of service, the home page, and a copyright page.
+  > The footer element alone is sufficient for such cases; while a nav element can be
+  > used in such cases, it is usually unnecessary.
+
 ## Me:
 
 - [LinkedIn](https://www.linkedin.com/in/amrabelgawad/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/AmrAbdelgwaad)
 
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
