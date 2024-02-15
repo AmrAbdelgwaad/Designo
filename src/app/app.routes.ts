@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 export const routes: Routes = [
   {
     path: 'home',
-    title: 'Designo Agency',
+    title: 'Designo Agency | Home',
     component: HomeComponent,
     children: [
       {
@@ -14,7 +14,7 @@ export const routes: Routes = [
           import('./home/web-design/web-design.component').then(
             (m) => m.WebDesignComponent,
           ),
-        title: 'Designo Agency web design portfolio',
+        title: 'Designo Agency | Web Design',
       },
       {
         path: 'app-design',
@@ -22,7 +22,7 @@ export const routes: Routes = [
           import('./home/app-design/app-design.component').then(
             (m) => m.AppDesignComponent,
           ),
-        title: 'Designo Agency app design portfolio',
+        title: 'Designo Agency | App Design',
       },
       {
         path: 'graphic-design',
@@ -30,7 +30,7 @@ export const routes: Routes = [
           import('./home/graphic-design/graphic-design.component').then(
             (m) => m.GraphicDesignComponent,
           ),
-        title: 'Designo Agency graphic design portfolio',
+        title: 'Designo Agency | Graphic Design',
       },
     ],
   },
@@ -38,7 +38,7 @@ export const routes: Routes = [
     path: 'about',
     loadComponent: () =>
       import('./about/about.component').then((m) => m.AboutComponent),
-    title: 'Designo Agency about',
+    title: 'Designo Agency | About Us',
   },
   {
     path: 'locations',
@@ -46,13 +46,13 @@ export const routes: Routes = [
       import('./locations/locations.component').then(
         (m) => m.LocationsComponent,
       ),
-    title: 'Designo Agency locations',
+    title: 'Designo Agency | Locations',
   },
   {
     path: 'contact',
     loadComponent: () =>
       import('./contact/contact.component').then((m) => m.ContactComponent),
-    title: 'Designo Agency contact',
+    title: 'Designo Agency | Contact Us',
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
