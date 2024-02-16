@@ -1,0 +1,12 @@
+@use "../../global/colors" as var;
+
+.about__img{
+  margin: 2.13rem auto 0;
+  min-width: 100%;
+ height: 20rem;
+  object-fit: cover;
+}
+
+.about__content{
+  background: var.$clr-Peach;
+}
