@@ -20,8 +20,8 @@
       />
     </picture>
     <div class="about__content">
-      <h1 class="about__heading">About Us</h1>
-      <p class="about__description">
+      <h1 class="about__heading title">About Us</h1>
+      <p class="about__description description">
         Founded in 2010, we are a creative agency that produces lasting results
         for our clients. We’ve partnered with many startups, corporations, and
         nonprofits alike to craft designs that make real impact. We’re always
@@ -53,13 +53,13 @@
     </picture>
 
     <div class="secondary-content">
-      <h2 class="secondary__title">World-class talent</h2>
-      <p class="secondary__description">
+      <h2 class="secondary__title title">World-class talent</h2>
+      <p class="secondary__description description">
         We are a crew of strategists, problem-solvers, and technologists. Every
         design is thoughtfully crafted from concept to launch, ensuring success
         in its given market. We are constantly updating our skills in a myriad
         of platforms.
-        <span
+        <span class="space"
           >Our team is multi-disciplinary and we are not merely interested in
           form — content and meaning are just as important. We give great
           importance to craftsmanship, service, and prompt delivery. Clients
@@ -70,5 +70,42 @@
     </div>
   </div>
 
+  <div class="tertiary-container">
+    <picture>
+      <source
+        media="(min-width: 75em)"
+        srcset="assets/images/about/desktop/image-real-deal-d.jpg"
+      />
+      <source
+        media="(min-width: 43em)"
+        srcset="assets/images/about/tablet/image-real-deal-t.jpg"
+      />
+
+      <img
+        ngSrc="assets/images/about/mobile/image-real-deal-p.jpg"
+        alt=""
+        height="320"
+        width="375"
+        priority
+        class="tertiary__img"
+      />
+    </picture>
+
+    <div class="tertiary-content">
+      <h2 class="tertiary__title title">The real deal</h2>
+      <p class="tertiary__description description">
+        As strategic partners in our clients’ businesses, we are ready to take
+        on any challenge as our own. Solving real problems require empathy and
+        collaboration, and we strive to bring a fresh perspective to every
+        opportunity. We make design and technology more accessible and give you
+        tools to measure success.
+        <span class="space"
+          >We are visual storytellers in appealing and captivating ways. By
+          combining business and marketing strategies, we inspire audiences to
+          take action and drive real results.</span
+        >
+      </p>
+    </div>
+  </div>
   <app-floating-contact></app-floating-contact>
 </main>
