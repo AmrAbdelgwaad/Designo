@@ -1,0 +1,53 @@
+@use "../../global/colors" as var;
+
+.locations {
+  display: grid;
+  justify-content: center;
+  gap: 3rem;
+  margin: 7.5rem auto;
+}
+
+.location__img {
+  background-color: var.$clr-LightGrey;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.location__title {
+  color: var.$clr-DarkGrey;
+  margin: 3rem 0 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.3125rem;
+}
+
+.location__link {
+  display: block;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  color: var.$clr-White;
+  background: var.$clr-Peach;
+  margin: 0 auto;
+  padding: 1.12rem 1.16rem 1rem;
+  max-width: 9.58rem;
+  &:hover {
+    background: var.$clr-LightPeach;
+  }
+}
+
+@media (min-width: 75em) {
+  .locations {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,23.125rem);
+    //width: 69.375rem;
+    //gap: 11.13rem;
+    gap: 0;
+    margin: 10rem auto;
+  }
+}
