@@ -1,6 +1,51 @@
-<div style="height: 300px;"
-     leaflet
-     [leafletOptions]="options"
-     [leafletLayers]="layers"
->
+<h1 class="sr-only">locations</h1>
+
+<div class="location">
+  <div
+    leaflet
+    [leafletOptions]="canadaOptions"
+    [leafletLayers]="canadaLayers"
+    class="location__map"
+  ></div>
+  <h2 class="location__title">Canada</h2>
+  <p class="location__description">
+    Designo Central Office 3886 Wellington Street Toronto, Ontario M9C 3J5
+  </p>
+  <p class="location__description">
+    Contact P : +1 253-863-8967 M : contact&commat;designo.co
+  </p>
+</div>
+
+<div class="location">
+  <div
+    leaflet
+    [leafletOptions]="australiaOptions"
+    [leafletLayers]="australiaLayers"
+    class="location__map"
+  ></div>
+
+  <h2 class="location__title">Australia</h2>
+  <p class="location__description">
+    Designo AU Office 19 Balonne Street New South Wales 2443
+  </p>
+  <p class="location__description">
+    Contact P : (02) 6720 9092 M : contact&commat;designo.au
+  </p>
+</div>
+
+<div class="location">
+  <div
+    leaflet
+    [leafletOptions]="ukOptions"
+    [leafletLayers]="ukLayers"
+    class="location__map"
+  ></div>
+
+  <h2 class="location__title">United Kingdom</h2>
+  <p class="location__description">
+    Designo UK Office 13 Colorado Way Rhyd-y-fro SA8 9GA
+  </p>
+  <p class="location__description">
+    Contact P : 078 3115 1400 M : contact&commat;designo.uk
+  </p>
 </div>
