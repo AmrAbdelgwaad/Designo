@@ -33,6 +33,7 @@ Users should be able to:
 - Scss
 - Flexbox
 - CSS Grid
+- Leaflet JS
 - Mobile-first workflow
 - Bem (I am not 100% using it, it just offers some guidelines for me to follow)
 - Webstorm
@@ -74,6 +75,7 @@ Use this section to outline areas that you want to continue focusing on in futur
   > pages of a site, such as the terms of service, the home page, and a copyright page.
   > The footer element alone is sufficient for such cases; while a nav element can be
   > used in such cases, it is usually unnecessary.
+- [ngx-leaflet](https://github.com/bluehalo/ngx-leaflet) - Core Leaflet package for Angular
 
 ## Me:
 
