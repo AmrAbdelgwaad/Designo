@@ -1,51 +1,82 @@
 <h1 class="sr-only">locations</h1>
 
-<div class="location">
-  <div
-    leaflet
-    [leafletOptions]="canadaOptions"
-    [leafletLayers]="canadaLayers"
-    class="location__map"
-  ></div>
-  <h2 class="location__title">Canada</h2>
-  <p class="location__description">
-    Designo Central Office 3886 Wellington Street Toronto, Ontario M9C 3J5
-  </p>
-  <p class="location__description">
-    Contact P : +1 253-863-8967 M : contact&commat;designo.co
-  </p>
+<div class="locations">
+  <div class="location">
+    <div
+      leaflet
+      [leafletOptions]="canadaOptions"
+      [leafletLayers]="canadaLayers"
+      class="location__map"
+    ></div>
+    <div class="location__content">
+      <h2 class="location__title">Canada</h2>
+      <div class="flex-group">
+        <p class="location__description">
+          Designo Central Office<span class="opaque">
+            3886 Wellington Street&NewLine;Toronto, Ontario M9C 3J5</span
+          >
+        </p>
+        <p class="location__description">
+          Contact
+          <span class="opaque"
+            >P : +1 253-863-8967&NewLine;M : contact&commat;designo.co</span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="location spaced">
+    <div
+      leaflet
+      [leafletOptions]="australiaOptions"
+      [leafletLayers]="australiaLayers"
+      class="location__map"
+    ></div>
+
+    <div class="location__content">
+      <h2 class="location__title">Australia</h2>
+      <div class="flex-group">
+        <p class="location__description">
+          Designo AU Office
+          <span class="opaque"
+            >19 Balonne Street&NewLine;New South Wales 2443</span
+          >
+        </p>
+        <p class="location__description">
+          Contact
+          <span class="opaque"
+            >P : (02) 6720 9092&NewLine;M : contact&commat;designo.au</span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="location spaced">
+    <div
+      leaflet
+      [leafletOptions]="ukOptions"
+      [leafletLayers]="ukLayers"
+      class="location__map"
+    ></div>
+
+    <div class="location__content">
+      <h2 class="location__title">United Kingdom</h2>
+      <div class="flex-group">
+        <p class="location__description">
+          Designo UK Office
+          <span class="opaque">13 Colorado Way&NewLine;Rhyd-y-fro SA8 9GA</span>
+        </p>
+        <p class="location__description">
+          Contact
+          <span class="opaque"
+            >P : 078 3115 1400&NewLine;M : contact&commat;designo.uk</span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="location">
-  <div
-    leaflet
-    [leafletOptions]="australiaOptions"
-    [leafletLayers]="australiaLayers"
-    class="location__map"
-  ></div>
-
-  <h2 class="location__title">Australia</h2>
-  <p class="location__description">
-    Designo AU Office 19 Balonne Street New South Wales 2443
-  </p>
-  <p class="location__description">
-    Contact P : (02) 6720 9092 M : contact&commat;designo.au
-  </p>
-</div>
-
-<div class="location">
-  <div
-    leaflet
-    [leafletOptions]="ukOptions"
-    [leafletLayers]="ukLayers"
-    class="location__map"
-  ></div>
-
-  <h2 class="location__title">United Kingdom</h2>
-  <p class="location__description">
-    Designo UK Office 13 Colorado Way Rhyd-y-fro SA8 9GA
-  </p>
-  <p class="location__description">
-    Contact P : 078 3115 1400 M : contact&commat;designo.uk
-  </p>
-</div>
+<app-floating-contact></app-floating-contact>

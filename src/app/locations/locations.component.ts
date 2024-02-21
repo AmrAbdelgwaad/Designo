@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { icon, latLng, marker, tileLayer } from 'leaflet';
+import { FloatingContactComponent } from '../floating-contact/floating-contact.component';
 @Component({
   selector: 'app-locations',
   standalone: true,
-  imports: [LeafletModule],
+  imports: [LeafletModule, FloatingContactComponent],
   templateUrl: './locations.component.html',
   styleUrl: './locations.component.scss',
 })
@@ -31,7 +32,7 @@ export class LocationsComponent {
         shadowUrl: 'assets/images/locations/desktop/marker-shadow.png',
       }),
       alt: 'Designo agency in Australia',
-    }).bindPopup('1.Hey 🤨🤨🤨!!!!'),
+    }).bindPopup('1. Hey 🤨🤨🤨!!!!'),
   ];
 
   australiaOptions = {
@@ -56,7 +57,7 @@ export class LocationsComponent {
         shadowUrl: 'assets/images/locations/desktop/marker-shadow.png',
       }),
       alt: 'Designo agency in Canada',
-    }).bindPopup('2.Do you want to play with me 😈😈😈?'),
+    }).bindPopup('2. Do you want to play a little game with me 😈😈😈?'),
   ];
 
   ukOptions = {
@@ -81,6 +82,6 @@ export class LocationsComponent {
         shadowUrl: 'assets/images/locations/desktop/marker-shadow.png',
       }),
       alt: 'Designo agency in UK',
-    }).bindPopup("3.I don't 😝😝😝"),
+    }).bindPopup("3. I don't 😝😝😝"),
   ];
 }

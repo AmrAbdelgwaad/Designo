@@ -1,3 +1,112 @@
-.location__map{
-height: 300px;
+@use "../../global/colors" as var;
+
+.locations {
+  margin: 2.12rem 0 7.5rem;
+}
+.location__map {
+  height: 300px;
+}
+
+.spaced {
+  margin-top: 2.5rem;
+}
+
+.location__content {
+  background: var.$clr-Grey-400;
+}
+
+.location__title {
+  color: var.$clr-Peach;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 5rem;
+}
+
+.location__description {
+  color: var.$clr-DarkGrey;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.66;
+  margin-top: 1.5rem;
+}
+
+.location__description:nth-of-type(2) {
+  padding-bottom: 5rem;
+}
+
+.opaque {
+  display: block;
+  white-space: pre-line;
+  font-weight: 400;
+}
+
+@media (min-width: 43em) {
+  .locations {
+    margin: 4rem 0 7.5rem;
+  }
+  .location__map {
+    height: 326px;
+    margin: 0 2.5rem 0 2.44rem;
+    border-radius: 0.9375rem;
+  }
+  .spaced {
+    margin-top: 7.5rem;
+  }
+  .location__content {
+    margin: 1.935rem 2.5rem 0 2.44rem;
+    border-radius: 0.9375rem;
+  }
+  .location__title {
+    text-align: left;
+    font-size: 2.5rem;
+    padding: 5.5rem 0 0 4.69rem;
+  }
+  .flex-group {
+    display: flex;
+    padding-left: 4.69rem;
+    gap: 7rem;
+  }
+  .location__description {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.625;
+  }
+  .location__description:nth-of-type(2) {
+    padding-bottom: 5.5rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .locations {
+    margin: 4rem 0 10rem;
+  }
+  .location {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1.875rem;
+  }
+  .location:nth-of-type(2) {
+    flex-direction: row;
+  }
+  .location__map {
+    width: 350px;
+    margin: 0;
+  }
+  .spaced {
+    margin-top: 2rem;
+  }
+  .location__content {
+    margin: 0;
+    width: 45.625rem;
+  }
+
+  .location__title {
+    padding: 5.5rem 0 0 5.94rem;
+  }
+  .flex-group {
+    padding-left: 5.94rem;
+  }
 }
