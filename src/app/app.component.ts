@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +11,6 @@ import { FooterComponent } from './footer/footer.component';
     NgOptimizedImage,
     RouterLink,
     RouterLinkActive,
-    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
