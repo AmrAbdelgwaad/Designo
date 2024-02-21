@@ -23,7 +23,7 @@ export class AppComponent {
   ngOnInit() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 5000);
+    }, 4000);
   }
 
   state = false;

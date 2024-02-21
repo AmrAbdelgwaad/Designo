@@ -99,7 +99,7 @@ $speed: 1.5s;
 
 // The navigation
 
-a {
+.primary-nav a {
   text-transform: uppercase;
 }
 .logo {
@@ -107,6 +107,69 @@ a {
   margin-top: 2.19rem;
   margin-left: 1.5rem;
 }
+
+// The Footer
+
+.footer {
+  background-color: var.$clr-Black;
+}
+
+.footer__logo {
+  max-width: 12.625rem;
+  padding: 15.81rem 0 2rem;
+  margin: 0 auto;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.reduced-padding {
+  padding-top: 4rem;
+}
+
+.footer__nav {
+  margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.footer__nav a {
+  color: var.$clr-White;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.footer__description {
+  color: var.$clr-White;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625;
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 2.5rem;
+  .opaque {
+    display: block;
+    font-weight: 400;
+    white-space: pre-line;
+  }
+}
+
+.social__links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+
+.twitter {
+  margin-top: 0.1rem;
+}
+
 @media (max-width: 43em) {
   .flex-group {
     display: flex;
@@ -145,7 +208,7 @@ a {
   li {
     padding-bottom: 2rem;
   }
-  a {
+  .primary-nav a {
     color: var.$clr-White;
     font-size: 1.5rem;
     font-weight: 400;
@@ -169,7 +232,7 @@ a {
     gap: 2.62rem;
     margin: 4.44rem 2.62rem 0 0;
   }
-  a {
+  .primary-nav a {
     color: var.$clr-DarkGrey;
     font-size: 0.875rem;
     font-weight: 400;
@@ -177,6 +240,50 @@ a {
   }
   a:hover {
     text-decoration: underline;
+  }
+
+  // The Footer
+
+  .footer__group {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.44rem;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  }
+  .footer__logo {
+    padding: 10.38rem 0 2.5rem;
+    border: none;
+  }
+  .reduced-padding {
+    padding-top: 5rem;
+  }
+  .footer__nav {
+    margin-top: 10.81rem;
+    grid-auto-flow: column;
+    column-gap: 2.62rem;
+  }
+  .reduced-margin {
+    margin-top: 5.44rem;
+  }
+  .footer__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.44rem;
+  }
+  .footer__content {
+    display: flex;
+    gap: 4rem;
+  }
+  .footer__description {
+    text-align: left;
+    margin-top: 1.94rem;
+  }
+  .footer__description:last-child .opaque {
+    font-weight: 700;
+  }
+  .social__links {
+    margin-top: 5.31rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -186,5 +293,39 @@ a {
   }
   .logo {
     margin-right: 34rem;
+  }
+
+  // The Footer
+
+  .footer__group {
+    justify-content: center;
+    margin: 0 auto;
+    width: 69.4375rem;
+  }
+  .footer__logo {
+    padding: 9rem 0 2.5rem;
+    margin-right: 33.59rem;
+  }
+  .reduced-padding {
+    padding-top: 4.5rem;
+  }
+  .footer__nav {
+    margin-top: 9.44rem;
+  }
+  .reduced-margin {
+    margin-top: 4.94rem;
+  }
+  .footer__info {
+    justify-content: center;
+    margin: 0 auto;
+    width: 69.4375rem;
+  }
+  .footer__content {
+    gap: 13rem;
+    margin-left: 0;
+    margin-right: 21.56rem;
+  }
+  .social__links {
+    padding-bottom: 4.5rem;
   }
 }

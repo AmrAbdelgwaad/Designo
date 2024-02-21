@@ -51,6 +51,7 @@
       <a
         routerLink="/contact"
         routerLinkActive=""
+        #contact="routerLinkActive"
         ariaCurrentWhenActive="page"
         (click)="state = false"
         >contact</a
@@ -60,5 +61,84 @@
 </header>
 
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+
+<footer class="footer">
+  <div class="footer__group">
+    <a href="./home">
+      <img
+        ngSrc="assets/images/shared/desktop/logo-light.png"
+        alt="Home - Designo"
+        height="54"
+        width="404"
+        priority
+        [class.reduced-padding]="contact.isActive"
+        class="footer__logo"
+    /></a>
+
+    <ul class="footer__nav" [class.reduced-margin]="contact.isActive">
+      <li>
+        <a href="./about">our company</a>
+      </li>
+      <li>
+        <a href="./locations">locations</a>
+      </li>
+      <li>
+        <a href="./contact">contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer__info">
+    <div class="footer__content">
+      <p class="footer__description">
+        Designo Central Office
+        <span class="opaque"
+          >3886 Wellington Street&NewLine;Toronto, Ontario M9C 3J5</span
+        >
+      </p>
+      <p class="footer__description">
+        Contact Us (Central Office)
+        <span class="opaque"
+          >P : +1 253-863-8967&NewLine;M : contact&commat;designo.co</span
+        >
+      </p>
+    </div>
+
+    <div class="social__links">
+      <a href=""
+        ><img
+          ngSrc="assets/images/shared/desktop/icon-facebook.svg"
+          alt="Designo facebook"
+          height="24"
+          width="24" /></a
+      ><a href=""
+        ><img
+          ngSrc="assets/images/shared/desktop/icon-youtube.svg"
+          alt="Designo youtube"
+          height="24"
+          width="24" /></a
+      ><a href=""
+        ><img
+          ngSrc="assets/images/shared/desktop/icon-twitter.svg"
+          alt="Designo twitter"
+          class="twitter"
+          height="20"
+          width="24" /></a
+      ><a href=""
+        ><img
+          ngSrc="assets/images/shared/desktop/icon-pinterest.svg"
+          alt="Designo pinterest"
+          height="24"
+          width="24" /></a
+      ><a href=""
+        ><img
+          ngSrc="assets/images/shared/desktop/icon-instagram.svg"
+          alt="Designo instagram"
+          height="24"
+          width="24"
+      /></a>
+    </div>
+  </div>
+</footer>
+
 }
