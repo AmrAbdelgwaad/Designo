@@ -1,5 +1,29 @@
-<p>contact works!</p>
+<div>
+  <h1>Contact Us</h1>
+  <p>
+    Ready to take it to the next level? Let’s talk about your project or idea
+    and find out how we can help your business grow. If you are looking for
+    unique digital experiences that’s relatable to your users, drop us a line.
+  </p>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="name" class="sr-only">name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+
+      #name
+      formControlName="name"
+    />
+    <p>{{name.value}}</p>
+    <label for="email" class="sr-only">email</label>
+    <input type="email" name="email" id="email" formControlName="email" />
+    <label for="phone" class="sr-only">phone</label>
+    <input type="text" name="phone" id="phone" formControlName="phone" />
+    <label for="message" class="sr-only">message</label>
+    <input type="text" name="message" id="message" formControlName="message" />
+    <button [disabled]="!contactForm.valid">Submit</button>
+  </form>
+</div>
 
 <app-location-links></app-location-links>
-
-
