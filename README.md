@@ -28,6 +28,7 @@ Users should be able to:
 
 - Angular 17
 - Angular routing
+- Reactive forms
 - TypeScript
 - Semantic HTML5 markup
 - Scss
@@ -76,9 +77,10 @@ Use this section to outline areas that you want to continue focusing on in futur
   > The footer element alone is sufficient for such cases; while a nav element can be
   > used in such cases, it is usually unnecessary.
 - [ngx-leaflet](https://github.com/bluehalo/ngx-leaflet) - Core Leaflet package for Angular
+- [angular.dev](https://angular.dev/guide/forms/form-validation#validating-input-in-reactive-forms) - Validating form input
+- [stackoverflow](https://stackoverflow.com/questions/52254683/angular-form-validation-how-to-show-error-message-on-submit) - how to show error message on submit
 
 ## Me:
 
 - [LinkedIn](https://www.linkedin.com/in/amrabelgawad/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/AmrAbdelgwaad)
-

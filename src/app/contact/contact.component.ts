@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { LocationLinksComponent } from '../location-links/location-links.component';
-import {
-  FormControl,
-  FormGroup,
-  ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -15,13 +10,37 @@ import {
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  contactForm = new FormGroup({
-    name: new FormControl('', [Validators.required]),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    phone: new FormControl('', [Validators.required]),
-    message: new FormControl('', [Validators.required]),
+  main = false;
+  success = true;
+  contactForm = this.formBuilder.group({
+    name: ['', [Validators.required]],
+    email: ['', [Validators.required, Validators.email]],
+    phone: ['', [Validators.required]],
+    message: ['', [Validators.required]],
   });
+
+  constructor(private formBuilder: FormBuilder) {}
+
+  get name() {
+    return this.contactForm.get('name');
+  }
+  get email() {
+    return this.contactForm.get('email');
+  }
+  get phone() {
+    return this.contactForm.get('phone');
+  }
+  get message() {
+    return this.contactForm.get('message');
+  }
+
   onSubmit() {
-    console.warn(this.contactForm.value);
+    if (!this.contactForm.valid) {
+      this.contactForm.markAllAsTouched();
+    } else {
+      this.main = true;
+      this.success = false;
+      console.warn(this.contactForm.value);
+    }
   }
 }
