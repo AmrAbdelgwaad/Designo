@@ -17,7 +17,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Designo';
-  isLoading = false; // TODO TEMPORARY FOR THE SCREENSHOT
+  isLoading = true;
   ngOnInit() {
     setTimeout(() => {
       this.isLoading = false;
