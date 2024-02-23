@@ -17,11 +17,11 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Designo';
-  isLoading = false; //TODO change this later
+  isLoading = true;
   ngOnInit() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 4000);
+    }, 3000);
   }
 
   state = false;

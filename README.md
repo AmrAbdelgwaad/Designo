@@ -41,26 +41,37 @@ Users should be able to:
 
 ### What I learned:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+- Using setTimeOut function:
+```typescript
+ setTimeout(() => {
+  this.isLoading = false;
+}, 3000);
 ```
-
-```css
-
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+- Using Leaflet library:
+```typescript
+  canadaOptions = {
+  layers: [
+    tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }),
+  ],
+  zoom: 13,
+  center: latLng(43.71705, -79.25469),
+  zoomControl: false,
 };
 ```
-
-### Continued development:
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
+- Using Reactive forms in angular:
+```typescript
+ contactForm = this.formBuilder.group({
+  name: ['', [Validators.required]],
+  email: ['', [Validators.required, Validators.email]],
+  phone: ['', [Validators.required]],
+  message: ['', [Validators.required]],
+});
+```
+- There is a lot of things I came across in this project happy to see you exploring them.
 ### Useful resources:
 
 - [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - I used this to import the fonts locally
