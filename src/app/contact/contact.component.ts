@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { LocationLinksComponent } from '../location-links/location-links.component';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [LocationLinksComponent, ReactiveFormsModule],
+  imports: [LocationLinksComponent, ReactiveFormsModule, NgOptimizedImage],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -40,7 +41,6 @@ export class ContactComponent {
     } else {
       this.main = true;
       this.success = false;
-      console.warn(this.contactForm.value);
     }
   }
 }
