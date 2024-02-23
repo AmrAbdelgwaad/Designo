@@ -4,7 +4,7 @@
   background: var.$clr-Peach
     url("../../assets/images/contact/mobile/bg-pattern-hero-contact-mobile.svg")
     no-repeat;
-  background-position:  top;
+  background-position: top;
   margin-top: 2.31rem;
   padding: 4.5rem 0;
 }
@@ -25,10 +25,11 @@
   margin: 1.5rem 1.5rem 3rem;
 }
 
-input , textarea{
+input,
+textarea {
   display: block;
   margin: 0 auto 1.56rem;
-  width:  min(327px,90vw);
+  width: min(327px, 90vw);
   border: none;
   outline: none;
   background: none;
@@ -36,14 +37,14 @@ input , textarea{
   color: var.$clr-White;
   font-size: 0.9375rem;
   font-weight: 500;
-  padding-left: .86rem;
+  padding-left: 0.86rem;
   height: 33px;
   &::placeholder {
     color: var.$clr-White;
     opacity: 0.5;
-
   }
-  &:focus , &:active, {
+  &:focus,
+  &:active {
     background: none;
     border-bottom: 3px solid var.$clr-White;
   }
@@ -51,7 +52,9 @@ input , textarea{
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
 }
 input[data-autocompleted] {
   background-color: transparent !important;
@@ -60,12 +63,12 @@ input[data-autocompleted] {
 textarea {
   resize: none;
   height: 76.8px;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     display: none;
   }
 }
 
-.error{
+.error {
   color: var.$clr-White;
   font-size: 0.75rem;
   font-style: italic;
@@ -74,21 +77,21 @@ textarea {
   left: 50%;
   margin-top: -3.1rem;
   margin-left: 3rem;
-  &::after{
+  &::after {
     content: "";
     width: 1.25rem;
     height: 1.25rem;
     position: absolute;
-    margin-left: .5625rem;
+    margin-left: 0.5625rem;
     background: url("../../assets/images/contact/desktop/icon-error.svg");
   }
 }
 
-.less-margin{
+.less-margin {
   margin-left: 0;
 }
 
-.contact__btn{
+.contact__btn {
   display: block;
   cursor: pointer;
   border-radius: 0.5rem;
@@ -103,20 +106,54 @@ textarea {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   padding: 1.12rem 2.94rem 1rem 3rem;
-  &:hover{
+  &:hover {
     color: var.$clr-White;
     background-color: var.$clr-LightPeach;
   }
 }
 
+// Success message
+
+.success {
+  margin-top: 2.31rem;
+  background-color: var.$clr-Peach;
+}
+.success__img {
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+.success__title{
+  color: var.$clr-White;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  span{
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+.success__description{
+  color: var.$clr-White;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.66;
+  margin: 1.5rem 1.5rem 0;
+  padding-bottom: 2.5rem;
+  span{
+    font-weight: 700;
+  }
+}
 @media (min-width: 43em) {
   .contact {
     background: var.$clr-Peach
-    url("../../assets/images/contact/desktop/bg-pattern-hero-desktop.svg")
-    no-repeat;
+      url("../../assets/images/contact/desktop/bg-pattern-hero-desktop.svg")
+      no-repeat;
     background-position: -8rem -6rem;
     margin: 4rem 2.5rem 0 2.44rem;
-    border-radius: .9375rem;
+    border-radius: 0.9375rem;
     padding: 4.44rem 0;
   }
   .contact__title {
@@ -131,7 +168,8 @@ textarea {
     line-height: 1.625;
     margin: 2rem 3.63rem 2.5rem;
   }
-  input , textarea {
+  input,
+  textarea {
     width: calc(100% - 7.26rem);
   }
   .contact__btn {
@@ -143,6 +181,27 @@ textarea {
     margin-left: 0;
     margin-right: 7.63rem;
   }
+
+  // Success message
+
+  .success {
+    margin: 4rem 2.5rem 0 2.44rem;
+    border-radius: 0.9375rem;
+  }
+  .success__img {
+    margin: 0 auto;
+    padding-top: 3.5rem;
+  }
+
+  .success__title{
+    font-size: 2.5rem;
+  }
+
+  .success__description{
+    font-size: 1rem;
+    line-height: 1.625;
+    padding-bottom: 3.5rem;
+  }
 }
 
 @media (min-width: 75em) {
@@ -151,7 +210,7 @@ textarea {
     width: 69.4375rem;
     display: flex;
     margin: 4rem auto 0;
-    padding:  0;
+    padding: 0;
   }
   .contact__title {
     padding-top: 8.44rem;
@@ -162,10 +221,11 @@ textarea {
     width: 27.8rem;
     margin: 2rem 0 0 5.94rem;
   }
- .contact__form{
-   margin: 3.44rem 6rem 0 auto;
- }
-  input , textarea {
+  .contact__form {
+    margin: 3.44rem 6rem 0 auto;
+  }
+  input,
+  textarea {
     width: 23.75rem;
     height: 38px;
   }
@@ -181,11 +241,39 @@ textarea {
     margin-left: 22rem;
     margin-right: 0;
   }
-  .less-margin{
+  .less-margin {
     margin-left: 17rem;
+  }
+
+  // Success message
+
+  .success {
+    width: 69.4375rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 4rem auto 0;
+  }
+  .success__img {
+    margin: 0 6rem 0 0;
+    width: 40rem;
+    padding-top: 0;
+  }
+
+  .success__title{
+    text-align: left;
+    padding: 8.44rem 0 0 5.94rem;
+    width: 38rem;
+  }
+
+  .success__description{
+    text-align: left;
+    width: 38rem;
+    margin: 2rem 0  0 0;
+    padding-bottom: 10.06rem;
+    padding-left: 5.94rem;
   }
 }
 
-.hidden{
+.hidden {
   display: none;
 }

@@ -1,4 +1,4 @@
-<div  class="contact" [class.hidden]="main">
+<div class="contact" [class.hidden]="main">
   <div class="contact__content">
     <h1 class="contact__title">Contact Us</h1>
     <p class="contact__description">
@@ -80,19 +80,25 @@
   </form>
 </div>
 
-<div [class.hidden]="success" aria-live="polite">
+<div aria-live="polite" class="success" [class.hidden]="success">
   <img
     ngSrc="assets/images/home/desktop/illustration-friendly.svg"
     alt=""
     height="202"
     width="202"
-    class="feature__img"
+    class="success__img"
+    priority
   />
-  <h2>Thank you {{ name?.value }} for contacting us</h2>
-  <p>
-    a confirmation email has been sent to {{ email?.value }}.please confirm your
-    email and we will get to you as soon as possible
-  </p>
+  <div class="success__content">
+    <h2 class="success__title">
+      Thank you <span>{{ name?.value }}</span> for contacting us
+    </h2>
+    <p class="success__description">
+      a confirmation email has been sent to
+      <span>{{ email?.value }}</span> please confirm your email and we will get
+      to you as soon as possible
+    </p>
+  </div>
 </div>
 
 <app-location-links></app-location-links>
