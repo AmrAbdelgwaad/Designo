@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links:
 
-- [Solution URL](https://www.frontendmentor.io/solutions/planetsfactsite-using-angular-17-gOP497seth)
+- [Solution URL](https://www.frontendmentor.io/solutions/designo-agency-angular17-qNslTxBH4x)
 - [Live Site URL](https://designo-flame.vercel.app)
 
 ## My process
@@ -28,7 +28,7 @@ Users should be able to:
 
 - Angular 17
 - Angular routing
-- Reactive forms
+- Angular Reactive forms
 - TypeScript
 - Semantic HTML5 markup
 - Scss
