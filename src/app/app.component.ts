@@ -17,12 +17,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Designo';
-  isLoading = true;
-  ngOnInit() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 3000);
-  }
 
   state = false;
   toggle() {
