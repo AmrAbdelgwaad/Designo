@@ -1,104 +1,113 @@
-<div class="contact" [class.hidden]="main">
-  <div class="contact__content">
-    <h1 class="contact__title">Contact Us</h1>
-    <p class="contact__description">
-      Ready to take it to the next level? Let’s talk about your project or idea
-      and find out how we can help your business grow. If you are looking for
-      unique digital experiences that’s relatable to your users, drop us a line.
-    </p>
+<main>
+  <div class="contact" [class.hidden]="main">
+    <div class="contact__content">
+      <h1 class="contact__title">Contact Us</h1>
+      <p class="contact__description">
+        Ready to take it to the next level? Let’s talk about your project or
+        idea and find out how we can help your business grow. If you are looking
+        for unique digital experiences that’s relatable to your users, drop us a
+        line.
+      </p>
+    </div>
+    <form
+      [formGroup]="contactForm"
+      (ngSubmit)="onSubmit()"
+      class="contact__form"
+    >
+      <div>
+        <label for="name" class="sr-only">name</label>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          aria-describedby="name-error"
+          placeholder="Name"
+          required
+        />
+        <span id="name-error" aria-live="polite">
+          @if (name?.invalid && (name?.dirty || name?.touched)) {
+          <span class="error">Can't be empty</span>
+          }
+        </span>
+      </div>
+      <div>
+        <label for="email" class="sr-only">email</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          aria-describedby="email-error"
+          placeholder="Email Address"
+          required
+        />
+        <span id="email-error" aria-live="polite">
+          @if (email?.invalid && (email?.dirty || email?.touched)) { @if
+          (email?.hasError('required')) {
+          <span class="error">Can't be empty</span>
+          } @else if (email?.hasError('email')) {
+          <span class="error less-margin"
+            >Please use a valid email address</span
+          >
+          } }
+        </span>
+      </div>
+
+      <div>
+        <label for="phone" class="sr-only">phone</label>
+        <input
+          type="text"
+          id="phone"
+          formControlName="phone"
+          aria-describedby="phone-error"
+          placeholder="Phone"
+          required
+        />
+        <span id="phone-error" aria-live="polite">
+          @if (phone?.invalid && (phone?.dirty || phone?.touched)) {
+          <span class="error">Can't be empty</span>
+          }
+        </span>
+      </div>
+      <div>
+        <label for="message" class="sr-only">message</label>
+        <textarea
+          type="text"
+          id="message"
+          formControlName="message"
+          aria-describedby="message-error"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <span id="message-error" aria-live="polite">
+          @if (message?.invalid && (message?.dirty || message?.touched)) {
+          <span class="error">Can't be empty</span>
+          }
+        </span>
+      </div>
+      <button class="contact__btn">Submit</button>
+    </form>
   </div>
-  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact__form">
-    <div>
-      <label for="name" class="sr-only">name</label>
-      <input
-        type="text"
-        id="name"
-        formControlName="name"
-        aria-describedby="name-error"
-        placeholder="Name"
-        required
-      />
-      <span id="name-error" aria-live="polite">
-        @if (name?.invalid && (name?.dirty || name?.touched)) {
-        <span class="error">Can't be empty</span>
-        }
-      </span>
-    </div>
-    <div>
-      <label for="email" class="sr-only">email</label>
-      <input
-        type="email"
-        id="email"
-        formControlName="email"
-        aria-describedby="email-error"
-        placeholder="Email Address"
-        required
-      />
-      <span id="email-error" aria-live="polite">
-        @if (email?.invalid && (email?.dirty || email?.touched)) { @if
-        (email?.hasError('required')) {
-        <span class="error">Can't be empty</span>
-        } @else if (email?.hasError('email')) {
-        <span class="error less-margin">Please use a valid email address</span>
-        } }
-      </span>
-    </div>
 
-    <div>
-      <label for="phone" class="sr-only">phone</label>
-      <input
-        type="text"
-        id="phone"
-        formControlName="phone"
-        aria-describedby="phone-error"
-        placeholder="Phone"
-        required
-      />
-      <span id="phone-error" aria-live="polite">
-        @if (phone?.invalid && (phone?.dirty || phone?.touched)) {
-        <span class="error">Can't be empty</span>
-        }
-      </span>
+  <div aria-live="polite" class="success" [class.hidden]="success">
+    <img
+      ngSrc="assets/images/home/desktop/illustration-friendly.svg"
+      alt=""
+      height="202"
+      width="202"
+      class="success__img"
+      priority
+    />
+    <div class="success__content">
+      <h2 class="success__title">
+        Thank you <span>{{ name?.value }}</span> for contacting us
+      </h2>
+      <p class="success__description">
+        a confirmation email has been sent to
+        <span>{{ email?.value }}</span> please confirm your email and we will
+        get to you as soon as possible
+      </p>
     </div>
-    <div>
-      <label for="message" class="sr-only">message</label>
-      <textarea
-        type="text"
-        id="message"
-        formControlName="message"
-        aria-describedby="message-error"
-        placeholder="Your Message"
-        required
-      ></textarea>
-      <span id="message-error" aria-live="polite">
-        @if (message?.invalid && (message?.dirty || message?.touched)) {
-        <span class="error">Can't be empty</span>
-        }
-      </span>
-    </div>
-    <button class="contact__btn">Submit</button>
-  </form>
-</div>
-
-<div aria-live="polite" class="success" [class.hidden]="success">
-  <img
-    ngSrc="assets/images/home/desktop/illustration-friendly.svg"
-    alt=""
-    height="202"
-    width="202"
-    class="success__img"
-    priority
-  />
-  <div class="success__content">
-    <h2 class="success__title">
-      Thank you <span>{{ name?.value }}</span> for contacting us
-    </h2>
-    <p class="success__description">
-      a confirmation email has been sent to
-      <span>{{ email?.value }}</span> please confirm your email and we will get
-      to you as soon as possible
-    </p>
   </div>
-</div>
 
-<app-location-links></app-location-links>
+  <app-location-links></app-location-links>
+</main>
