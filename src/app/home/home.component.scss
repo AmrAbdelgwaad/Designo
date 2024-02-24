@@ -225,9 +225,9 @@
 
 @media (min-width: 75em) {
   main {
-    background-image: url("../../assets/images/shared/desktop/bg-pattern-leaf.svg"),
-      url("../../assets/images/shared/desktop/bg-pattern-leaf.svg");
-    background-repeat: no-repeat, no-repeat;
+    background-image: url("../../assets/images/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: left 17rem
   }
   // Banner
 
@@ -318,6 +318,9 @@
     column-gap: 2rem;
     margin: 10rem 0;
     grid-template-columns: repeat(3, 21.875rem);
+    background-image: url("../../assets/images/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: right 8rem;
   }
   .feature {
     display: block;
