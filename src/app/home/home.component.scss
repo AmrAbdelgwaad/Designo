@@ -105,7 +105,7 @@
 }
 
 .anchors-inactive {
- margin-bottom: 6rem;
+  margin-bottom: 6rem;
 }
 
 // Features
@@ -208,7 +208,7 @@
     display: flex;
     margin-left: 2.44rem;
   }
-  .feature__content{
+  .feature__content {
     margin-left: 3rem;
   }
   .feature__title {
@@ -218,12 +218,17 @@
 
   .feature__description {
     text-align: left;
-    max-width:  100%;
+    max-width: 100%;
     margin-right: 2.5rem;
   }
 }
 
 @media (min-width: 75em) {
+  main {
+    background-image: url("../../assets/images/shared/desktop/bg-pattern-leaf.svg"),
+      url("../../assets/images/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat, no-repeat;
+  }
   // Banner
 
   .banner {
@@ -318,7 +323,7 @@
     display: block;
     margin-left: 0;
   }
-  .feature__content{
+  .feature__content {
     margin-left: 0;
   }
   .feature__title {
@@ -328,7 +333,7 @@
 
   .feature__description {
     text-align: center;
-    max-width:  21.875rem;
+    max-width: 21.875rem;
     margin-right: 0;
   }
 }
