@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import {
+  CommonModule,
+  NgOptimizedImage,
+  ViewportScroller,
+} from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -21,5 +25,10 @@ export class AppComponent {
 
   toggle() {
     this.state = !this.state;
+  }
+
+  constructor(private viewportScroller: ViewportScroller) {}
+  scrollToTop() {
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 }

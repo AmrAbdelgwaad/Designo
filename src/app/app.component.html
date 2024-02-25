@@ -55,7 +55,7 @@
 
 <footer class="footer">
   <div class="footer__group">
-    <a href="./home">
+    <a routerLink="./home" (click)="scrollToTop()">
       <img
         ngSrc="assets/images/shared/desktop/logo-light.png"
         alt="Home - Designo"
@@ -68,13 +68,13 @@
 
     <ul class="footer__nav" [class.reduced-margin]="contact.isActive">
       <li>
-        <a routerLink="about">our company</a>
+        <a routerLink="about" (click)="scrollToTop()">our company</a>
       </li>
       <li>
-        <a routerLink="locations">locations</a>
+        <a routerLink="locations" (click)="scrollToTop()">locations</a>
       </li>
       <li>
-        <a routerLink="contact">contact</a>
+        <a routerLink="contact" (click)="scrollToTop()">contact</a>
       </li>
     </ul>
   </div>
