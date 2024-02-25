@@ -22,7 +22,6 @@
           formControlName="name"
           aria-describedby="name-error"
           placeholder="Name"
-          required
         />
         <span id="name-error" aria-live="polite">
           @if (name?.invalid && (name?.dirty || name?.touched)) {
@@ -38,7 +37,6 @@
           formControlName="email"
           aria-describedby="email-error"
           placeholder="Email Address"
-          required
         />
         <span id="email-error" aria-live="polite">
           @if (email?.invalid && (email?.dirty || email?.touched)) { @if
@@ -60,7 +58,6 @@
           formControlName="phone"
           aria-describedby="phone-error"
           placeholder="Phone"
-          required
         />
         <span id="phone-error" aria-live="polite">
           @if (phone?.invalid && (phone?.dirty || phone?.touched)) {
@@ -76,7 +73,6 @@
           formControlName="message"
           aria-describedby="message-error"
           placeholder="Your Message"
-          required
         ></textarea>
         <span id="message-error" aria-live="polite">
           @if (message?.invalid && (message?.dirty || message?.touched)) {
